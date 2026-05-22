@@ -1,5 +1,5 @@
 
-  - name: copy {{ component }} service
+  - name: "copy {{ component }} service"
     ansible.builtin.templates:
       src: "{{ component }}.service.j2"
       dest: "/etc/systemd/system/{{ component }}.service"
