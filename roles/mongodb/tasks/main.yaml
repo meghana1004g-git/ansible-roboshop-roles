@@ -1,7 +1,4 @@
-- name: mongodb configure
-  hosts: mongodb
-  become: Yes
-  tasks:
+
   - name: copy mongodb repo
     ansible.builtin.copy:
       src: mongo.repo  
@@ -20,7 +17,7 @@
   
   - name: start and enable mongodb
     ansible.builtin.service:
-       name: mongodb
+       name: mongod
        enabled: Yes
        state: started
       
