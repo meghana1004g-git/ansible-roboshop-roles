@@ -9,5 +9,5 @@ filters:
 compose:
   # This sets the ansible_host variable to connect with the private ip address without changing the hostname.
 keyed_groups:
-- prefix: ""
-  key: tags.Name
+- separator: ''
+  key: frontend
