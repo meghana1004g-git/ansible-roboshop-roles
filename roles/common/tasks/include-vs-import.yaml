@@ -3,7 +3,7 @@
     msg: "HI from MSG-1"
 
 - name: set the os fact
-  asible.builtin.set_fact:
+  ansible.builtin.set_fact:
     os: "debian"
 
 - name: message-2
